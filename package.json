@@ -1,0 +1,24 @@
+{
+  "name": "gql-server-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoviDeCroock/gql-server-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoviDeCroock/gql-server-poc/issues"
+  },
+  "homepage": "https://github.com/JoviDeCroock/gql-server-poc#readme",
+  "devDependencies": {
+    "@types/node": "12.0.10",
+    "typescript": "3.5.2"
+  }
+}
