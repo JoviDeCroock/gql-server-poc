@@ -1,8 +1,5 @@
 import { DocumentNode, GraphQLSchema } from 'graphql';
-import {
-  makeExecutableSchema,
-  GraphQLParseOptions,
-} from 'graphql-tools';
+import { makeExecutableSchema } from 'graphql-tools';
 
 type Resolver = Object | Function;
 
