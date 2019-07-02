@@ -1,12 +1,10 @@
 import { DocumentNode, GraphQLSchema } from 'graphql';
-import { makeExecutableSchema } from 'graphql-tools';
-
-type Resolver = Object | Function;
+import { makeExecutableSchema, IResolvers } from 'graphql-tools';
 
 interface Options {
   schema?: GraphQLSchema;
   typeDefs?: DocumentNode | Array<DocumentNode>;
-  resolvers?: Resolver
+  resolvers?: IResolvers;
 }
 
 class Server {
@@ -23,7 +21,6 @@ class Server {
       }
       this.schema = makeExecutableSchema({
         typeDefs: Array.isArray(typeDefs) ? typeDefs : [typeDefs],
-        schemaDirectives: null,
         resolvers,
         parseOptions: {},
       });
