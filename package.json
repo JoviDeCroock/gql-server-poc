@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "example": "tsc example/index.ts && node lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,13 @@
   },
   "homepage": "https://github.com/JoviDeCroock/gql-server-poc#readme",
   "devDependencies": {
+    "@types/graphql": "^14.2.2",
     "@types/node": "12.0.10",
+    "tslib": "^1.10.0",
     "typescript": "3.5.2"
+  },
+  "dependencies": {
+    "graphql": "^14.4.1",
+    "graphql-tools": "^4.0.5"
   }
 }
